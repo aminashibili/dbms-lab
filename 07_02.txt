@@ -1,0 +1,58 @@
+-- 
+-- Roll No:07
+-- Name:Amina shibili
+-- Program:
+-- 
+
+
+--
+-- Table structure for table dept
+--
+create table dept(dno int Primary key,dname varchar(20)unique);
+
+
+--
+-- Table structure for table student
+--
+create table student (Rollno int Primary key,Name varchar(20),Age int Default 20  Check(Age>20 and Age<50),Adress varchar(30) Not null,dnum int,Foreign key(dnum) references dept(dno));
+
+
+
+-- ---------create/alter statement commands----------- # This line may be removed in the actual file
+
+--
+-- Dumping data for table dept
+--
+insert into dept values(1,'MCA');
+
+insert into dept values(2,'IEEE');
+
+insert into dept values(3,'CSE');
+
+insert into dept values(4,'IT');
+
+insert into dept values(5,'MBA');
+
+
+--
+-- Dumping data for table student
+--
+insert into student values(1,'Amina',22,'Noorayinganagath',2);
+
+insert into student values(2,'Nesrin',21,'Konnotvalapil',1);
+
+insert into student values(3,'Muhzeena',25,'pallangal',5);
+
+insert into student values(4,'Surumy',23,'kallamparambil house',5);
+
+insert into student values(4,'Nimitha',29,'ambalaveetil house',3);
+
+
+-- --------insert/update statement commands----------- # This line may be removed in the actcual file
+
+--
+-- SQl Query Statements
+--
+
+-- -----SQL query statments preceeded by the its question-------- # This line may be removed in the actual file
+-- -----Question number should be commented---------------#This line may be removed in the actual file
